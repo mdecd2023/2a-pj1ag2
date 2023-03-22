@@ -40,7 +40,13 @@ var winkVideoData1 = {
 <p>9.然後在小黑窗執行cd <span>2a-pj1agx</span>移動到倉儲目錄下執行python3 server.py(沒出現東西就算成功)</p>
 <p>10.在firefox或waterfox中執行https://stud2.cycu.org:8xxx</p>
 <p>*若有設定proxy要關掉</p>
-<h2>server.py</h2><h1>schedule</h1>
+<h2>server.py</h2>
+<p>在倉儲中加入server.py，由於本倉儲是兩人協同，但一個倉儲只能有一個server.py，</p>
+<p>且<span>內部port及外部port都是一人一個，這樣就會有兩種問題:</span></p>
+<p><span>1.都用同一個port，這樣就會同一時間只能一個人執行動態網頁</span></p>
+<p><span>2.將port改完再執行python3 server.py，這樣雖然可以同時但每次git pull完都要改一次</span></p>
+<p>我的方法:添加一個server2.py，其實就跟server.py一樣只是檔名跟port不一樣，這樣只要一個人執行</p>
+<p>python3 server.py，另一個執行python3 server2.py，這樣就可以同時啟動動態，還不用每次都改port</p><h1>schedule</h1>
 <p><strong>week1</strong></p>
 <p>1.分組</p>
 <p><strong>week2</strong></p>
