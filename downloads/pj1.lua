@@ -1,9 +1,9 @@
 function sysCall_init()  
-    right_wheel= sim.getObjectHandle('joint') 
+    right_wheel= sim.getObjectHandle('joint1') 
     left_wheel= sim.getObjectHandle('joint2') 
     right_velocity=0 
     left_velocity=0
-    speed=8
+    speed=5
     sim.setJointTargetVelocity(right_wheel,0)
     sim.setJointTargetVelocity(left_wheel,0)
  
@@ -15,7 +15,7 @@ function sysCall_actuation()
         if (message==sim.message_keypress) then
             
             if (auxiliaryData[1]==32) then
-                -- right key 
+
                 right_velocity=0 
                 left_velocity=0 
                 sim.setJointMaxForce(right_wheel, 0) 
