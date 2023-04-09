@@ -147,15 +147,37 @@ img.add_border {
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/MfkN-pduOq0" title="YouTube video player" width="560"></iframe></p>
 <p></p>
 <p>賽車軌道草圖</p>
-<p><img alt="" height="500" src="./../images/2023-03-23.png" width="800"/></p>
+<p><img alt="" height="315" src="./../images/2023-03-23.png" width="560"/></p>
 <p><a href="./../downloads/racing track.zip">賽車軌道</a></p>
 <p>球框草圖</p>
-<p><img alt="" height="630" src="./../images/2023-03-27.png" width="1120"/></p>
+<p><img alt="" height="315" src="./../images/2023-03-27.png" width="560"/></p>
 <p><a href="./../downloads/ball frame.zip">球框</a></p>
 <p>柵欄草圖</p>
-<p><img alt="" height="630" src="./../images/2023-03-27 (1).png" width="1120"/></p>
+<p><img alt="" height="315" src="./../images/2023-03-27 (1).png" width="560"/></p>
 <p><a href="./../downloads/the fence.zip">柵欄</a></p>
-<br />problem << <a href='problem.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
+<p>goal2:可用遠端api輸入變數的記分板(<a href="./../downloads/scoreboard_lua.txt">scoreboard_lua</a> *這是coppeliasim裡的)</p>
+<p>下面的程式可將名為myVariable的變數輸入到coppeliasim中的記分板(目前我只會浮點數)</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim
+import sys
+import time
+a=0
+sim.simxFinish(-1) # just in case, close all opened connections
+clientID = sim.simxStart('127.0.0.1', 19997, True, True, 5000, 5) # Connect to CoppeliaSim
+
+if clientID != -1:
+    print('Connected to remote API server')
+    sim.simxSetFloatSignal(clientID, "myVariable", a, sim.simx_opmode_oneshot)
+
+    # Wait for a while to let the signal value propagate
+    time.sleep(1)
+
+    # Get the value of the variable "myVariable"
+    returnCode, value = sim.simxGetFloatSignal(clientID, "myVariable", sim.simx_opmode_blocking)
+
+else:
+    print('Failed connecting to remote API server')
+    sys.exit('Could not connect')</pre>
+<p></p><br />problem << <a href='problem.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
         
     <!-- footer -->
       <div class="container">
