@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.4.13)  16 APR 2023 18:38
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.4.13)  16 APR 2023 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,10 +979,10 @@ File: ./../images//4810.png Graphic file (type bmp)
 <./../images//4810.png>
 ) (4_simulation.tex [5]
 Chapter 3.
-File: ./../images//48.4.png Graphic file (type bmp)
-<./../images//48.4.png>
 File: ./../images//48.6.png Graphic file (type bmp)
 <./../images//48.6.png>
+File: ./../images//48.4.png Graphic file (type bmp)
+<./../images//48.4.png>
 [6
 
 ]
@@ -1009,6 +1009,6 @@ Here is how much of TeX's memory you used:
  39410 multiletter control sequences out of 15000+600000
  526051 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,17n,84p,305b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,84p,305b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cd_report.pdf (14 pages).
