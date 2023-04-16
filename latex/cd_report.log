@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.4.13)  15 APR 2023 13:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1 Portable) (preloaded format=xelatex 2023.4.13)  16 APR 2023 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,7 +922,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-(1_introduction.tex [2]
+[2] (cd_report.toc)
+\tf@toc=\write4
+\openout4 = `cd_report.toc'.
+
+ [3
+
+] (1_introduction.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -931,57 +937,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 File: ./../images//2023-04-14.png Graphic file (type bmp)
 <./../images//2023-04-14.png>
+
+Overfull \hbox (42.68149pt too wide) in paragraph at lines 11--12
+ [] 
+ []
+
 ) (2_machine_learning.tex [1
 
 ]
 File: ./../images//2023-03-27.png Graphic file (type bmp)
 <./../images//2023-03-27.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
 File: ./../images//螢幕擷取畫面 2023-04-14 221556.png Graphic file (type bmp)
 <./../images//螢幕擷取畫面 2023-04-14 221556.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
- []
-
+[2]
 File: ./../images//football.png Graphic file (type bmp)
 <./../images//football.png>
-
-Overfull \hbox (43.57217pt too wide) in paragraph at lines 9--11
-[]\TU/標楷體(0)/m/n/14 加 入 球 框 感 測 器 和 記 分 板。|  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+) (3_training_env.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--1
 
  []
 
-[2]
-File: ./../images//48.0.png Graphic file (type bmp)
-<./../images//48.0.png>
-) (9_reference.tex [3]) (10_appendix.tex [4
+[3]
+Chapter 2.
+File: ./../images//48.1.png Graphic file (type bmp)
+<./../images//48.1.png>
+File: ./../images//48.2.png Graphic file (type bmp)
+<./../images//48.2.png>
+[4
+
+]
+File: ./../images//48.5.png Graphic file (type bmp)
+<./../images//48.5.png>
+File: ./../images//48.3.png Graphic file (type bmp)
+<./../images//48.3.png>
+File: ./../images//4810.png Graphic file (type bmp)
+<./../images//4810.png>
+) (4_simulation.tex [5]
+Chapter 3.
+File: ./../images//48.4.png Graphic file (type bmp)
+<./../images//48.4.png>
+File: ./../images//48.6.png Graphic file (type bmp)
+<./../images//48.6.png>
+[6
+
+]
+File: ./../images//48.7.png Graphic file (type bmp)
+<./../images//48.7.png>
+File: ./../images//48.8.png Graphic file (type bmp)
+<./../images//48.8.png>
+) (9_reference.tex [7]) (10_appendix.tex [8
 
 ]
 File: ./../images//編譯流程.png Graphic file (type bmp)
 <./../images//編譯流程.png>
- [5]) (cd_report.aux)
+ [9]) (cd_report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cd_report.out' has not changed.
-(rerunfilecheck)             Checksum: 91E232E8CE5B0FB5C3BAD578D98605D7;534.
+(rerunfilecheck)             Checksum: 9E01EAB7E81707E5E67BA22396A959DF;818.
  ) 
 Here is how much of TeX's memory you used:
- 19337 strings out of 411476
- 375368 string characters out of 5820613
+ 19508 strings out of 411476
+ 378379 string characters out of 5820613
  1862001 words of memory out of 5000000
- 39254 multiletter control sequences out of 15000+600000
+ 39410 multiletter control sequences out of 15000+600000
  526051 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,17n,84p,305b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,84p,305b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cd_report.pdf (9 pages).
+Output written on cd_report.pdf (14 pages).

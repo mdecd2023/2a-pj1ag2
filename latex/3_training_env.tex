@@ -1,14 +1,25 @@
-\chapter{訓練環境}
-\section{OpenAI Gym}
- Gym 是用於開發和比較強化學習算法的工具包，他不對agent的結構做任何假設，並且與任何數據計算庫兼容，而可以用來制定強化學習的算法。這個環境具有共享的介面，使我們能用來編寫常規算法，也就能教導agents如何步行到玩遊戲。\\[6pt]
-
-\section{Pong}
- 取自 1977年發行的一款家用遊戲機ATARI 2600中的遊戲，內建於Gym，這是一個橫向的乒乓遊戲，左方是預設電腦玩家，右邊由使用者或是由訓練程式控制(圖.\ref{fig.pong})。在強化學習範例中，Pong與實體冰球機簡化後環境相似。\\
-\begin{figure}[hbt!]
-\begin{center}
-\includegraphics[height=8cm]{pong_gym}
-\caption{\Large ATARI Pong}\label{fig.pong}
-\end{center}
-\end{figure} 
-
 \newpage
+\begin{figure}[hbt!]
+\chapter{環境設定}
+\section{碰撞檢測}
+\end{figure}
+1.可探測(Detectable)，可讓感測器感測到物體。在本遊戲中，球應該將Detectable打開，這樣才可以感測到進球，而bubbleRob機器人則要把Detectable關掉，不然機器人碰到感測器也會得分。\
+\begin{center}
+\includegraphics[angle=0,width=12cm]{48.1}\\
+\includegraphics[angle=0,width=12cm]{48.2}
+\end{center}
+\newpage
+2.在球框前加入射線感測器(Ray type)，這樣球進框就一定會碰到感測器，射線感測器不能貼地不然感測不到。
+\begin{center}
+\includegraphics[angle=0,width=10cm]{48.5}
+\end{center}
+
+3.球框及圍牆的Body is respondable要打開不然球會穿過去，而Body is dynamic則要關上不然球框會亂動。
+\begin{center}
+\includegraphics[angle=0,width=10cm]{48.3}
+\end{center}
+
+4.開啟Connectivity->Visualization，從http://127.0.0.1:23020/ 中可看見。
+\begin{center}
+\includegraphics[angle=0,width=10cm]{4810}
+\end{center}
